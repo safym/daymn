@@ -3,14 +3,28 @@
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: nowrap;
-    
+    position: fixed;
+    top: 0; 
+    width: 100%;
     justify-content: space-between;
-    font-size: 30px;
+    font-size: 200%;
+    padding: 10px 0 10px 0;
+    background-color: black;
+    color: rgb(218, 187, 246);
 }
+
 .navigation .logo{
-    flex: auto;  
+    flex: auto; 
+    display: flex;
+    flex-direction: row;
+    justify-content: left; 
    
 }
+.navigation .logo img {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 
 .navigation .links{
     flex: auto; 
@@ -23,25 +37,92 @@
     margin-right: 5%;
 }
 
-.logo *{
-    margin-left: 5%;
-    margin-right: 5%;
+.navigation a {
+    text-decoration: none;
+    color: rgb(218, 187, 246);
 }
-
 
 body {
    font-family: 'Chakra Petch', sans-serif;
+   margin: 0;
+   overflow-x: hidden;
   }
 
 .title {
     text-align: center;
+    /* width: 100vw;
+    height: 100vh; */
+    margin-top: 10%;
 }
 .title h1{
-    font-size: 300px;
+    font-size: 2000%;
     margin-top: 5%;
     margin-bottom: 0;
 }
 .title h2{
     font-size: 70px;
     margin: 0 auto;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    /* width: 100vw;
+    height: 100vh; */
+    
+    /* flex-wrap: wrap; */
+}
+
+.first .textabout {
+    flex: auto;  
+    text-align: center;
+    padding: 5%; 
+    line-height: 300%; 
+}
+
+.first .pic1 {
+    flex: auto; 
+    padding: 5%;  
+}
+
+.second {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.second .advantages {
+    flex: auto;  
+    text-align: center;
+    padding: 5%; 
+    line-height: 300%; 
+}
+
+.second .pic2 {
+    flex: auto; 
+    padding: 5%;  
+}
+
+.advantages ul{
+    display: flex;
+    list-style:none;
+}
+
+.advantages li{
+    flex: auto;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 2px -2px 5px 0 rgba(176, 168, 199, 0.1),
+        -2px -2px 5px 0 rgba(176, 168, 199, 0.1),
+        2px 2px 5px 0 rgba(176, 168, 199, 0.1),
+        -2px 2px 5px 0 rgba(176, 168, 199, 0.1);
+    font-size: 20px;
+ 
+    transition: 0.3s all linear;
+}
+
+.advantages img{
+    margin: 20px;
 }
