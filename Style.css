@@ -119,10 +119,20 @@ body {
         2px 2px 5px 0 rgba(176, 168, 199, 0.1),
         -2px 2px 5px 0 rgba(176, 168, 199, 0.1);
     font-size: 20px;
- 
+
+    width: 200px;
+    height: 200px;
     transition: 0.3s all linear;
 }
 
 .advantages img{
     margin: 20px;
+}
+
+.buy_cards {
+    display: flex;
+}
+
+.buy_cards *{
+    flex:auto;
 }
