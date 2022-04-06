@@ -37,7 +37,7 @@
     margin-right: 5%;
 }
 
-.navigation a {
+.navigation a{
     text-decoration: none;
     color: white;
 }
@@ -131,11 +131,13 @@ p {
     justify-content: space-between;
     padding: 20px;
     margin: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 2px -2px 5px 0 rgba(176, 168, 199, 0.1),
         -2px -2px 5px 0 rgba(176, 168, 199, 0.1),
         2px 2px 5px 0 rgba(176, 168, 199, 0.1),
         -2px 2px 5px 0 rgba(176, 168, 199, 0.1);
+
+    
     font-size: 20px;
 
     width: 200px;
@@ -152,16 +154,25 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-template-rows: 1fr; */
     grid-template-rows: minmax(80px,max-content) 1fr minmax(70px,max-content) 1fr minmax(70px,max-content);  
-    gap: 20px 20px;
+    gap: 0px 50px;
 
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .buy_cards ul {
 
     padding: 0;
     list-style: none;
+    font-size: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    line-height: 300%;
+
+
 }
 
 
@@ -179,6 +190,8 @@ p {
 }
 
 *[id^='buy'] {
+
+    border-radius: 20px;
 
     box-shadow: 2px -2px 5px 0 rgba(176, 168, 199, 0.1),
         -2px -2px 5px 0 rgba(176, 168, 199, 0.1),
@@ -198,32 +211,53 @@ h4{
 
 .buy {
     text-align: center;
-
+ 
 }
 
-.clear{
-
-    clear: both; 
-    content: ""; 
-    display: block; 
-    height: 0; 
-    font-size: 0; 
-    overflow:  hidden;
-    
-    }
-
-.buy_cards .button{
+.buy_cards *[class^='button'] {
     
     width: 300px;
     height: 70px;
 
     padding: 0%;
-    text-align: center;
+    
     border-radius: 75px;
-    display: inline-block;
+ 
     background: rgb(46, 255, 99);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px;
+    
 }
 
+#buy_button1 {
+    background: rgb(151, 151, 151); 
+}
+
+#buy_button2 {
+    background: rgb(128, 255, 134); 
+}
+
+#buy_button3 {
+    background-image: linear-gradient(to right, rgb(162, 83, 236), rgb(0, 255, 170));
+}
+
+.button_action *{
+    background: none;
+    border: 0;
+
+}
+
+
+
 .button a{
+    
+    flex: auto;
+    
     font-size: medium;
+    text-align: center;
 }
