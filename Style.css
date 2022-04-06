@@ -74,6 +74,10 @@ body {
     margin: 0 auto;
 }
 
+p {
+    font-size: 20px;
+}
+
 .desc {
     color: white;
 }
@@ -163,6 +167,7 @@ body {
 
 #buy1 {
     grid-area: 1 / 1 / 2 / 2;
+    display: inline-block;
 }
 
 #buy2 {
@@ -196,12 +201,29 @@ h4{
 
 }
 
+.clear{
+
+    clear: both; 
+    content: ""; 
+    display: block; 
+    height: 0; 
+    font-size: 0; 
+    overflow:  hidden;
+    
+    }
+
 .buy_cards .button{
     
-    width: 85%;
-    height: 25%;
+    width: 300px;
+    height: 70px;
+
+    padding: 0%;
+    text-align: center;
     border-radius: 75px;
-    
-    background: black;
+    display: inline-block;
+    background: rgb(46, 255, 99);
 }
 
+.button a{
+    font-size: medium;
+}
