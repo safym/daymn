@@ -58,7 +58,12 @@ body {
     font-family: 'Chakra Petch', sans-serif;
     margin: 0;
     overflow-x: hidden;
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(209, 204, 255));
+}
+
+.main_container {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(210, 162, 255));
+    margin: 0;
+    padding-bottom: 50px;
 }
 
 .title {
@@ -258,7 +263,7 @@ h4 {
 
 .button1:hover {
     /* background-color: rgb(88, 88, 88); */
-    box-shadow: inset 120px 0px 124px -36px rgb(129, 129, 129);
+    box-shadow: inset 120px 0px 124px -36px rgb(111, 100, 141);
     color: #fff;
 }
 
