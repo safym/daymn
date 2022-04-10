@@ -54,10 +54,15 @@ h4 {
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Chakra Petch', sans-serif;
     margin: 0;
     overflow-x: hidden;
+    
 }
 
 .main_container {
@@ -119,6 +124,16 @@ p {
 .first .pic1 {
     flex: auto;
     padding: 5%;
+    
+}
+
+.animation {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 2px -2px 40px 0 rgba(176, 168, 199, 0.3),
+        -2px -2px 40px 0 rgba(176, 168, 199, 0.3),
+        2px 2px 40px 0 rgba(176, 168, 199, 0.3),
+        -2px 2px 40px 0 rgba(176, 168, 199, 0.3);
 }
 
 .second {
@@ -253,37 +268,44 @@ h4 {
 
     margin: 20px;
 
-    -webkit-transition: .2s ease-in-out;
+
+    transition: 1s;
 
 }
 
 .button1 {
-    background-color: rgb(151, 151, 151);
+    /* background-color: rgb(151, 151, 151); */
+    background: linear-gradient(to left, #757F9A, #9796b4, #757F9A);
+    background-size: 200%;
 }
 
 .button1:hover {
     /* background-color: rgb(88, 88, 88); */
-    box-shadow: inset 120px 0px 124px -36px rgb(111, 100, 141);
+    /* box-shadow: inset 120px 0px 124px -36px rgb(128, 121, 144); */
+    background-position: right;
     color: #fff;
 }
 
 .button2 {
-    background-color: rgb(128, 255, 134);
+    background: linear-gradient(to left, rgb(128, 255, 134), rgb(46, 209, 141), rgb(128, 255, 134));
+    background-size: 200%;
 }
 
 .button2:hover {
-    box-shadow: inset 120px 0px 124px -36px rgba(36, 179, 179);
+    /* box-shadow: inset 120px 0px 124px -36px rgba(36, 179, 179); */
     /* background-color: rgb(36,179,179); */
+    background-position: right;
     color: #fff;
 }
 
 .button3 {
-    transition: 0.5s;
-    background-color: rgb(162, 83, 236);
+    background: linear-gradient(to left, rgb(162, 83, 236), rgb(71, 113, 228), rgb(162, 83, 236));
+    background-size: 200%;
 }
 
 .button3:hover {
-    box-shadow: inset 120px 0px 124px -36px rgba(0, 255, 179, 0.739);
+    /* box-shadow: inset 120px 0px 124px -36px rgba(0, 255, 179, 0.739); */
+    background-position: right;
     color: #fff;
 }
 
