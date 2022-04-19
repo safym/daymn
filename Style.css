@@ -66,10 +66,13 @@ body {
 }
 
 .main_container {
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(210, 162, 255));
+    background-color: rgb(21, 0, 46);
+    
     margin: 0;
     padding-bottom: 50px;
 }
+
+
 
 .title {
     text-align: center;
@@ -110,6 +113,7 @@ p {
     flex-direction: row;
     /* width: 100vw;
     height: 100vh; */
+    background-image: linear-gradient(to bottom, rgb(117, 24, 223), rgb(58, 56, 190));
 
     /* flex-wrap: wrap; */
 }
@@ -130,15 +134,16 @@ p {
 .animation {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    box-shadow: 2px -2px 40px 0 rgba(176, 168, 199, 0.3),
-        -2px -2px 40px 0 rgba(176, 168, 199, 0.3),
-        2px 2px 40px 0 rgba(176, 168, 199, 0.3),
-        -2px 2px 40px 0 rgba(176, 168, 199, 0.3);
+    box-shadow: 2px -2px 40px 0 rgba(34, 30, 44, 0.3),
+        -2px -2px 40px 0 rgba(34, 30, 44, 0.3),
+        2px 2px 40px 0 rgba(34, 30, 44, 0.3),
+        -2px 2px 40px 0 rgba(34, 30, 44, 0.3);
 }
 
 .second {
     display: flex;
     flex-direction: row;
+     background-color:  rgb(40, 15, 68);
     /* flex-wrap: wrap; */
 }
 
@@ -157,6 +162,8 @@ p {
 .advantages ul {
     display: flex;
     list-style: none;
+
+    color: rgb(194, 157, 255);
 }
 
 .advantages li {
@@ -164,12 +171,13 @@ p {
     justify-content: space-between;
     padding: 20px;
     margin: 20px;
-    border-radius: 20px;
-    box-shadow: 2px -2px 5px 0 rgba(176, 168, 199, 0.1),
-        -2px -2px 5px 0 rgba(176, 168, 199, 0.1),
-        2px 2px 5px 0 rgba(176, 168, 199, 0.1),
-        -2px 2px 5px 0 rgba(176, 168, 199, 0.1);
+    border-radius: 200px;
+    /* box-shadow: 2px -2px 10px 0 rgba(127, 91, 255, 0.616),
+        -2px -2px 10px 0 rgba(127, 91, 255, 0.616),
+        2px 2px 10px 0 rgba(127, 91, 255, 0.616),
+        -2px 2px 10px 0 rgba(127, 91, 255, 0.616); */
 
+    border: 5px solid rgb(103, 255, 209);
 
     font-size: 20px;
 
@@ -177,7 +185,7 @@ p {
     height: 200px;
     transition: 1s all linear;
 
-    background-color: white;
+    background-color: rgb(27, 9, 48);
 }
 
 .advantages img {
@@ -229,18 +237,26 @@ p {
 
     border-radius: 20px;
 
-    box-shadow: 2px -2px 5px 0 rgba(176, 168, 199, 0.1),
+    /* box-shadow: 2px -2px 5px 0 rgba(176, 168, 199, 0.1),
         -2px -2px 5px 0 rgba(176, 168, 199, 0.1),
         2px 2px 5px 0 rgba(176, 168, 199, 0.1),
-        -2px 2px 5px 0 rgba(176, 168, 199, 0.1);
+        -2px 2px 5px 0 rgba(176, 168, 199, 0.1); */
 
     padding: 0;
 
-    background-color: white;
+    color: white;
+
+    background-color: rgb(0, 0, 0);
 }
 
 h2 {
     font-size: 50px;
+
+    color: rgb(255, 255, 255);
+}
+
+.colorname {
+    color: rgb(0, 255, 170);
 }
 
 h4 {
@@ -249,6 +265,7 @@ h4 {
 
 .buy {
     text-align: center;
+    background-color: rgb(21, 0, 46);
 
 }
 
@@ -328,5 +345,16 @@ h4 {
     height: 5px;
     border-radius: 50px;
     border-style: none;
-    background-color: rgb(235, 235, 235);
+}
+
+.gradient1 {
+    background-color: rgb(124, 124, 124);
+}
+
+.gradient2 {
+    background-color: rgb(129, 255, 156);
+}
+
+.gradient3 {
+    background-color: rgb(184, 129, 255);
 }
