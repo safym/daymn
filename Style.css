@@ -1,14 +1,58 @@
-h1,
-h2,
-h3,
-h4,
-p {
+/* main */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+* {
+    box-sizing: border-box;
     cursor: default;
+}
+
+/* headers ans text */
+
+h2 {
+    font-size: 50px;
+
+    color: rgb(255, 255, 255);
+}
+
+.title h1 {
+    font-size: 2000%;
+    margin-top: 5%;
+    margin-bottom: 0;
+
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, rgb(166, 255, 131), rgb(0, 255, 255));
+}
+
+.title h2 {
+    font-size: 70px;
+    margin: 0 auto;
 }
 
 h4 {
     margin: 0;
+    font-size: 40px;
 }
+
+p {
+    font-size: 20px;
+    color: rgb(213, 197, 255);
+}
+
+
+/* section nav */
+
 
 .navigation {
     display: flex;
@@ -32,6 +76,11 @@ h4 {
 
 }
 
+.logopic {
+    transition: 1s;
+}
+
+
 .navigation .logo img {
     margin-left: 5%;
     margin-right: 5%;
@@ -54,25 +103,15 @@ h4 {
     color: white;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
-body {
-    font-family: 'Chakra Petch', sans-serif;
-    margin: 0;
-    overflow-x: hidden;
-    
-}
+/* section title */
 
 .main_container {
     background-color: rgb(21, 0, 46);
     
     margin: 0;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
-
-
 
 .title {
     text-align: center;
@@ -84,38 +123,40 @@ body {
     background-image: linear-gradient(to top, rgb(61, 0, 117), rgb(0, 0, 0));
 }
 
-.title h1 {
-    font-size: 2000%;
-    margin-top: 5%;
-    margin-bottom: 0;
-
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: linear-gradient(to right, rgb(166, 255, 131), rgb(0, 255, 255));
-}
-
-.title h2 {
-    font-size: 70px;
-    margin: 0 auto;
-}
-
-p {
-    font-size: 20px;
-}
-
 .desc {
     color: white;
 }
 
+/* section first */
+
 .first {
     display: flex;
-    flex-direction: row;
-    /* width: 100vw;
-    height: 100vh; */
+    flex-direction: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
     background-image: linear-gradient(to bottom, rgb(117, 24, 223), rgb(58, 56, 190));
+}
 
-    /* flex-wrap: wrap; */
+.firstquestion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questpart1,
+.questpart2 {
+    font-size: 70px;
+    margin: 0 auto;
+}
+
+.questpart1 {
+    color: white;
+}
+
+.questpart2 {
+    color: rgb(66, 255, 220);
 }
 
 .first .textabout {
@@ -132,19 +173,22 @@ p {
 }
 
 .animation {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
     box-shadow: 2px -2px 40px 0 rgba(34, 30, 44, 0.3),
         -2px -2px 40px 0 rgba(34, 30, 44, 0.3),
         2px 2px 40px 0 rgba(34, 30, 44, 0.3),
         -2px 2px 40px 0 rgba(34, 30, 44, 0.3);
 }
 
+
+/* section second */
+
 .second {
     display: flex;
     flex-direction: row;
      background-color:  rgb(40, 15, 68);
-    /* flex-wrap: wrap; */
 }
 
 .second .advantages {
@@ -167,30 +211,42 @@ p {
 }
 
 .advantages li {
-    flex: auto;
-    justify-content: space-between;
+    flex:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     margin: 20px;
-    border-radius: 200px;
+    border-radius: 50px;
     /* box-shadow: 2px -2px 10px 0 rgba(127, 91, 255, 0.616),
         -2px -2px 10px 0 rgba(127, 91, 255, 0.616),
         2px 2px 10px 0 rgba(127, 91, 255, 0.616),
         -2px 2px 10px 0 rgba(127, 91, 255, 0.616); */
 
-    border: 5px solid rgb(103, 255, 209);
+    border: 2px solid rgb(103, 255, 209);
 
     font-size: 20px;
 
     width: 200px;
-    height: 200px;
+    height: 220px;
+
     transition: 1s all linear;
 
     background-color: rgb(27, 9, 48);
 }
 
+.advantages li h3 {
+    margin-top: 0;
+}
+
 .advantages img {
+    flex: auto;
     margin: 20px;
 }
+
+
+/* section third (buy) */
 
 .buy_cards {
     display: grid;
@@ -205,7 +261,6 @@ p {
 }
 
 .buy_cards ul {
-
     padding: 0;
     list-style: none;
     font-size: 30px;
@@ -215,8 +270,6 @@ p {
     align-items: center;
 
     line-height: 300%;
-
-
 }
 
 
@@ -234,33 +287,19 @@ p {
 }
 
 *[id^='buy'] {
-
-    border-radius: 20px;
-
-    /* box-shadow: 2px -2px 5px 0 rgba(176, 168, 199, 0.1),
-        -2px -2px 5px 0 rgba(176, 168, 199, 0.1),
-        2px 2px 5px 0 rgba(176, 168, 199, 0.1),
-        -2px 2px 5px 0 rgba(176, 168, 199, 0.1); */
-
     padding: 0;
 
+    border-radius: 20px;
     color: white;
-
     background-color: rgb(0, 0, 0);
 }
 
-h2 {
-    font-size: 50px;
-
-    color: rgb(255, 255, 255);
+.lastquestion {
+    margin-top: 40px;
 }
 
 .colorname {
     color: rgb(0, 255, 170);
-}
-
-h4 {
-    font-size: 40px;
 }
 
 .buy {
@@ -270,37 +309,26 @@ h4 {
 }
 
 .buy_cards *[class^='button'] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 300px;
     height: 70px;
 
+    margin: 20px;
     padding: 0%;
 
     border-radius: 75px;
 
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    margin: 20px;
-
-
-    transition: 1s;
-
+    transition:  background-position 0.8s;
 }
+
+
 
 .button1 {
-    /* background-color: rgb(151, 151, 151); */
     background: linear-gradient(to left, #757F9A, #9796b4, #757F9A);
     background-size: 200%;
-}
-
-.button1:hover {
-    /* background-color: rgb(88, 88, 88); */
-    /* box-shadow: inset 120px 0px 124px -36px rgb(128, 121, 144); */
-    background-position: right;
-    color: #fff;
 }
 
 .button2 {
@@ -308,22 +336,9 @@ h4 {
     background-size: 200%;
 }
 
-.button2:hover {
-    /* box-shadow: inset 120px 0px 124px -36px rgba(36, 179, 179); */
-    /* background-color: rgb(36,179,179); */
-    background-position: right;
-    color: #fff;
-}
-
 .button3 {
     background: linear-gradient(to left, rgb(162, 83, 236), rgb(71, 113, 228), rgb(162, 83, 236));
     background-size: 200%;
-}
-
-.button3:hover {
-    /* box-shadow: inset 120px 0px 124px -36px rgba(0, 255, 179, 0.739); */
-    background-position: right;
-    color: #fff;
 }
 
 .button_action * {
@@ -357,4 +372,21 @@ h4 {
 
 .gradient3 {
     background-color: rgb(184, 129, 255);
+}
+
+/* elemets animations */
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+    /* box-shadow: inset 120px 0px 124px -36px rgba(36, 179, 179); */
+    /* background-color: rgb(36,179,179); */
+    
+    background-position: right;
+    border: 3px solid white;
+    color: #fff;
+}
+
+.logopic:hover {
+  transform: scaleX(-1);
 }
