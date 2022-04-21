@@ -1,8 +1,9 @@
+<!DOCTYPE html>”
 <html>
 
 <head>
     <title>Daymn</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="styles/Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
@@ -12,14 +13,14 @@
     <div class="navigation">
         <div class="logo">
             <img class="logopic" src="res/images/apple.png" width="40px" height="40px">
-            <a href="#1"><b>Daymn</b></a>
+            <a class="link" href="#1"><b>Daymn</b></a>
         </div>
         <div class="links">
-            <a href="#2">About</a>
+            <a class="link" href="#2">About</a>
             <!-- <a href="#3">Features</a> -->
-            <a href="#4">Buy</a>
+            <a class="link" href="#4">Buy</a>
             <div class="button_action">
-                <button>👀</button>
+                <img class="theme" src="res/images/theme.png" width="40px" height="40px" alt="filter invert">
             </div>
 
         </div>
@@ -27,7 +28,7 @@
 
     <div class="main">
         <div class="title" id="1">
-            <h1>DAYMN</h1>
+            <h1 class="brand">DAYMN</h1>
             <h2 class="desc">A new, refined piece of software</h2>
         </div>
         <div class="main_container">
@@ -38,7 +39,7 @@
                             <p class="questpart1">What is</p>
                             <p class="questpart2">Daymn?</p>
                         </h2>
-                        <p>
+                        <p class="textdaymn">
                             <b>Sunt ullamco nulla enim adipisicing sunt id et non aute laborum sunt. Voluptate
                                 exercitation
                                 exercitation cillum deserunt est eiusmod irure veniam duis minim voluptate quis elit.
@@ -69,15 +70,15 @@
                             <img src="res/images/growth.png" width="70px" height="70px">
                             <h3>That's nice!</h3>
                         </li> -->
-                            <li>
+                            <li class="advcards">
                                 <img src="res/images/optimism.png" width="70px" height="70px">
                                 <h3 class="adv">That's nice!</h3>
                             </li>
-                            <li>
+                            <li class="advcards">
                                 <img src="res/images/selfcare.png" width="70px" height="70px">
                                 <h3 class="adv">That's cool!</h3>
                             </li>
-                            <li>
+                            <li class="advcards">
                                 <img src="res/images/reputation.png" width="70px" height="70px">
                                 <h3 class="adv">That's good!</h3>
                             </li>
@@ -86,9 +87,9 @@
                 </div>
             </div>
             <div class="buy" id="4">
-                <h2>Oh shit, how buy???</h2>
+                <h2 class="question">Oh shit, how buy???</h2>
                 <div class="buy_cards">
-                    <div id="buy1">
+                    <div class="card" id="buy1">
                         <ul>
                             <h4>Daymn BASIC 😬</h4>
                             <hr class="gradient1">
@@ -104,7 +105,7 @@
 
                     </div>
 
-                    <div id="buy2">
+                    <div class="card" id="buy2">
                         <ul>
                             <h4>Daymn PRO 😌</h4>
                             <hr class="gradient2">
@@ -120,7 +121,7 @@
 
                     </div>
 
-                    <div id="buy3">
+                    <div class="card" id="buy3">
                         <ul>
                             <h4>Daymn GIGA 🤤</h4>
                             <hr class="gradient3">
@@ -138,11 +139,12 @@
                     </div>
                 </div>
 
-                <h2 class="lastquestion">What are you waiting for? ;)</h2>
+                <h2 class="question">What are you waiting for? ;)</h2>
             </div>
 
         </div>
     </div>
+    <script src=".//res/scripts/index.js"></script>
 </body>
 
 </html>
