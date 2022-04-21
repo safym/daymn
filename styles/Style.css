@@ -112,8 +112,12 @@ h4 {
     /* position: absolute; */
 }
 
-.theme {
+.lighttheme {
     filter: invert(100%); 
+}
+
+.darktheme {
+    filter: invert(0%); 
 }
 
 
@@ -238,7 +242,7 @@ h4 {
         2px 2px 10px 0 rgba(127, 91, 255, 0.616),
         -2px 2px 10px 0 rgba(127, 91, 255, 0.616); */
 
-    border: 2px solid rgb(103, 255, 209);
+    /* border: 2px solid rgb(103, 255, 209); */
 
     font-size: 20px;
 
@@ -318,7 +322,6 @@ h4 {
 
 .buy {
     text-align: center;
-    background-color: rgb(21, 0, 46);
 
 }
 
@@ -397,7 +400,7 @@ h4 {
     /* background-color: rgb(36,179,179); */
     
     background-position: right;
-    border: 3px solid white;
+    /* border: 3px solid rgb(0, 0, 0); */
     color: #fff;
 }
 
