@@ -82,135 +82,138 @@ document.addEventListener('click', function (e) {
             console.log(buttontheme[index].classList);
         }
 
-
+        return
     }
 
 
-    // if (e.target.className == 'darktheme') {
+if (e.target.className == 'darktheme') {
+    console.log(e);
 
-    //     const navig = document.getElementsByClassName("navigation");
-    //     navig[0].style.boxShadow = 'none';
-    //     navig[0].style.backgroundColor = 'black';
+    navig = document.getElementsByClassName("navigation");
+    navig[0].style.boxShadow = 'none';
+    navig[0].style.backgroundColor = 'black';
 
-    //     var setblacktext = ['desc', 'link', 'questpart1', 'textdaymn', 'card', 'question'];
+        var setblacktext = ['desc', 'link', 'questpart1', 'textdaymn', 'card', 'question'];
 
-    //     setblacktext.forEach((item, index) => {
+        setblacktext.forEach((item, index) => {
 
-    //         const text = document.getElementsByClassName(item);
-    //         for (i = 0; i < text.length; ++i) {
-    //             text[i].style.color = 'white';
-    //         }
-    //     })
+            text = document.getElementsByClassName(item);
+            for (i = 0; i < text.length; ++i) {
+                text[i].style.color = 'white';
+            }
+        })
 
-    //     const brand = document.getElementsByClassName("brand");
-    //     for (index = 0; index < brand.length; ++index) {
-    //         brand[index].style.backgroundImage = 'linear-gradient(to right, rgb(166, 255, 131), rgb(0, 255, 255))';
-    //     }
+        titleback = document.getElementsByClassName("title");
+        for (index = 0; index < titleback.length; ++index) {
+            titleback[index].style.backgroundImage = 'linear-gradient(to top, rgb(61, 0, 117), rgb(0, 0, 0))';
 
-    //     const questpart2 = document.getElementsByClassName("questpart2");
-    //     for (index = 0; index < questpart2.length; ++index) {
-    //         questpart2[index].style.color = 'rgb(66, 255, 220)';
-    //     }
+        }
 
-    //     const card = document.getElementsByClassName("card");
-    //     for (index = 0; index < card.length; ++index) {
-    //         card[index].style.backgroundColor = 'black';
-    //     }
+        brand = document.getElementsByClassName("brand");
+        for (index = 0; index < brand.length; ++index) {
+            brand[index].style.color = 'transparent';
+            brand[index].style.backgroundImage = 'linear-gradient(to right, rgb(166, 255, 131), rgb(0, 255, 255))';
+        }
 
-    //     const advcards = document.getElementsByClassName("advcards");
-    //     for (index = 0; index < advcards.length; ++index) {
-    //         advcards[index].style.backgroundColor = 'rgb(27, 9, 48)';
-    //     }
+        questpart2 = document.getElementsByClassName("questpart2");
+        for (index = 0; index < questpart2.length; ++index) {
+            questpart2[index].style.color = 'rgb(66, 255, 220)';
+        }
 
-    //     const titleback = document.getElementsByClassName("title");
-    //     for (index = 0; index < titleback.length; ++index) {
-    //         titleback[index].style.backgroundImage = 'linear-gradient(to right, rgb(166, 255, 131), rgb(0, 255, 255))';
+        card = document.getElementsByClassName("card");
+        for (index = 0; index < card.length; ++index) {
+            card[index].style.backgroundColor = 'black';
+        }
 
-    //     }
-
-    //     const secondback = document.getElementsByClassName("second");
-    //     for (index = 0; index < secondback.length; ++index) {
-
-    //         secondback[index].style.backgroundColor = 'rgb(40, 15, 68)';
-
-    //         secondback[index].style.backgroundImage = 'none';
+        advcards = document.getElementsByClassName("advcards");
+        for (index = 0; index < advcards.length; ++index) {
+            advcards[index].style.backgroundColor = 'rgb(27, 9, 48)';
+        }
 
 
-    //     }
+        secondback = document.getElementsByClassName("second");
+        for (index = 0; index < secondback.length; ++index) {
 
-    //     const firstback = document.getElementsByClassName("first");
-    //     for (index = 0; index < firstback.length; ++index) {
+            secondback[index].style.backgroundColor = 'rgb(40, 15, 68)';
 
-    //         firstback[index].style.backgroundColor = 'none';
-    //         firstback[index].style.backgroundImage = 'linear-gradient(to bottom, rgb(117, 24, 223), rgb(58, 56, 190))';
-
-    //     }
-
-    //     const maincont = document.getElementsByClassName("main_container");
-    //     for (index = 0; index < maincont.length; ++index) {
-
-    //         maincont[index].style.backgroundColor = 'rgb(21, 0, 46)';
-
-    //     }
+            secondback[index].style.backgroundImage = 'none';
 
 
-    //     var buttontheme = document.getElementsByClassName("darktheme");
-    //     for (index = 0; index < buttontheme.length; ++index) {
+        }
+
+        firstback = document.getElementsByClassName("first");
+        for (index = 0; index < firstback.length; ++index) {
+
+            firstback[index].style.backgroundColor = 'none';
+            firstback[index].style.backgroundImage = 'linear-gradient(to bottom, rgb(117, 24, 223), rgb(58, 56, 190))';
+
+        }
+
+        maincont = document.getElementsByClassName("main_container");
+        for (index = 0; index < maincont.length; ++index) {
+
+            maincont[index].style.backgroundColor = 'rgb(21, 0, 46)';
+
+        }
+
+
+        var buttontheme2 = document.getElementsByClassName("darktheme");
+        for (index = 0; index < buttontheme2.length; ++index) {
     
-    //         buttontheme[index].classList.add("lighttheme");
-    //         buttontheme[index].classList.remove("darktheme");
-    //     }
+            buttontheme2[index].classList.add("lighttheme");
+            buttontheme2[index].classList.remove("darktheme");
+        }
 
-
-    // }
+        return
+}
 
 }, false);
 
 // document.addEventListener('click', function (e) {
 
-//     if (e.target.className == 'darktheme') {
+//  if (e.target.className == 'darktheme') {
 
-//         const navig = document.getElementsByClassName("navigation");
+//         navig = document.getElementsByClassName("navigation");
 //         navig[0].style.boxShadow = 'none';
 //         navig[0].style.backgroundColor = 'black';
 
-//         var setblacktext = ['desc', 'link', 'questpart1', 'textdaymn', 'card', 'question'];
+//         var setblacktext2 = ['desc', 'link', 'questpart1', 'textdaymn', 'card', 'question'];
 
 //         setblacktext.forEach((item, index) => {
 
-//             const text = document.getElementsByClassName(item);
+//             text = document.getElementsByClassName(item);
 //             for (i = 0; i < text.length; ++i) {
 //                 text[i].style.color = 'white';
 //             }
 //         })
 
-//         const brand = document.getElementsByClassName("brand");
+//         brand = document.getElementsByClassName("brand");
 //         for (index = 0; index < brand.length; ++index) {
 //             brand[index].style.backgroundImage = 'linear-gradient(to right, rgb(166, 255, 131), rgb(0, 255, 255))';
 //         }
 
-//         const questpart2 = document.getElementsByClassName("questpart2");
+//         questpart2 = document.getElementsByClassName("questpart2");
 //         for (index = 0; index < questpart2.length; ++index) {
 //             questpart2[index].style.color = 'rgb(66, 255, 220)';
 //         }
 
-//         const card = document.getElementsByClassName("card");
+//         card = document.getElementsByClassName("card");
 //         for (index = 0; index < card.length; ++index) {
 //             card[index].style.backgroundColor = 'black';
 //         }
 
-//         const advcards = document.getElementsByClassName("advcards");
+//         advcards = document.getElementsByClassName("advcards");
 //         for (index = 0; index < advcards.length; ++index) {
 //             advcards[index].style.backgroundColor = 'rgb(27, 9, 48)';
 //         }
 
-//         const titleback = document.getElementsByClassName("title");
+//         titleback = document.getElementsByClassName("title");
 //         for (index = 0; index < titleback.length; ++index) {
 //             titleback[index].style.backgroundImage = 'linear-gradient(to right, rgb(166, 255, 131), rgb(0, 255, 255))';
 
 //         }
 
-//         const secondback = document.getElementsByClassName("second");
+//         secondback = document.getElementsByClassName("second");
 //         for (index = 0; index < secondback.length; ++index) {
 
 //             secondback[index].style.backgroundColor = 'rgb(40, 15, 68)';
@@ -220,7 +223,7 @@ document.addEventListener('click', function (e) {
 
 //         }
 
-//         const firstback = document.getElementsByClassName("first");
+//         firstback = document.getElementsByClassName("first");
 //         for (index = 0; index < firstback.length; ++index) {
 
 //             firstback[index].style.backgroundColor = 'none';
@@ -228,7 +231,7 @@ document.addEventListener('click', function (e) {
 
 //         }
 
-//         const maincont = document.getElementsByClassName("main_container");
+//         maincont = document.getElementsByClassName("main_container");
 //         for (index = 0; index < maincont.length; ++index) {
 
 //             maincont[index].style.backgroundColor = 'rgb(21, 0, 46)';
@@ -236,11 +239,11 @@ document.addEventListener('click', function (e) {
 //         }
 
 
-//         const buttontheme = document.getElementsByClassName("darktheme");
-//         for (index = 0; index < buttontheme.length; ++index) {
+//         var buttontheme2 = document.getElementsByClassName("darktheme");
+//         for (index = 0; index < buttontheme2.length; ++index) {
     
-//             buttontheme[index].classList.add("lighttheme");
-//             buttontheme[index].classList.remove("darktheme");
+//             buttontheme2[index].classList.add("lighttheme");
+//             buttontheme2[index].classList.remove("darktheme");
 //         }
 
 
